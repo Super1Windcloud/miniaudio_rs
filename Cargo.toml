@@ -1,0 +1,27 @@
+[package]
+name = "miniaudio_rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["superwindcloud <<1178933440@qq.com>>"]
+homepage = "https://github.com/super1windcloud/miniaudio_rs"
+description = "A Rust binding for miniaudio library"
+repository = "https://github.com/super1windcloud/miniaudio_rs"
+readme = "README.md"
+keywords = ["audio", "miniaudio", "binding"]
+license = "MIT"
+
+[lib]
+name = "miniaudio_rs"
+path = "src/lib.rs"
+
+
+[dependencies]
+libc = "0.2.176"
+
+[build-dependencies]
+bindgen = "0.72.1"
+cc = "1.2.39"
+
+
+
+
