@@ -9,7 +9,7 @@ repository = "https://github.com/super1windcloud/miniaudio_rs"
 readme = "README.md"
 keywords = ["audio", "miniaudio", "binding"]
 license = "MIT"
-
+publish = true
 [lib]
 name = "miniaudio_rs"
 path = "src/lib.rs"
