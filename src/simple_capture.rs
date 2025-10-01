@@ -1,4 +1,9 @@
-﻿use crate::miniaudio_rs::*;
+﻿use crate::miniaudio_rs::{
+    ma_device, ma_device_config, ma_device_config_init, ma_device_init, ma_device_start,
+    ma_device_type_ma_device_type_capture, ma_device_uninit, ma_encoder, ma_encoder_config,
+    ma_encoder_config_init, ma_encoder_init_file, ma_encoder_uninit, ma_encoder_write_pcm_frames,
+    ma_encoding_format_ma_encoding_format_wav, ma_format_ma_format_f32, ma_result, ma_uint64,
+};
 use std::ffi::CString;
 use std::os::raw::c_void;
 use std::ptr;
@@ -72,7 +77,7 @@ fn test_recorder() {
     let recorder = match AudioCapture::new("output.wav") {
         Ok(r) => r,
         Err(e) => {
-            eprintln!("Failed to start recorder: {}", { e });  
+            eprintln!("Failed to start recorder: {}", { e });
             return;
         }
     };

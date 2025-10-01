@@ -27,7 +27,7 @@ fn main() {
         .clang_arg("-IC:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/cppwinrt")
         .generate()
         .expect("Unable to generate bindings for miniaudio");
-    let out_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("src/miniaudio_rs.rs");
+    let out_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("src/miniaudio_rs_sys.rs");
     bindings
         .write_to_file(&out_path)
         .expect("Couldn't write bindings file");

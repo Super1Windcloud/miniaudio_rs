@@ -1,9 +1,8 @@
 ﻿use crate::miniaudio_rs::{
-    ma_data_source, ma_data_source_read_pcm_frames, ma_data_source_set_looping, ma_decoder,
-    ma_decoder_init_file, ma_decoder_uninit, ma_device, ma_device_config_init, ma_device_init,
-    ma_device_start, ma_device_uninit,
+    MA_TRUE, ma_data_source, ma_data_source_read_pcm_frames, ma_data_source_set_looping,
+    ma_decoder, ma_decoder_init_file, ma_decoder_uninit, ma_device, ma_device_config_init,
+    ma_device_init, ma_device_start, ma_device_type_ma_device_type_playback, ma_device_uninit,
 };
-use crate::{MA_TRUE, ma_device_type_ma_device_type_playback};
 use std::ffi::CString;
 use std::ptr;
 

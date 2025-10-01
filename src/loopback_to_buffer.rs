@@ -1,4 +1,8 @@
-﻿use crate::miniaudio_rs::*;
+﻿use crate::miniaudio_rs::{
+    ma_backend_ma_backend_wasapi, ma_device, ma_device_config_init, ma_device_init_ex,
+    ma_device_start, ma_device_type_ma_device_type_loopback, ma_device_uninit,
+    ma_format_ma_format_f32, ma_result_MA_SUCCESS,
+};
 use std::os::raw::c_void;
 use std::ptr;
 use std::slice::from_raw_parts;

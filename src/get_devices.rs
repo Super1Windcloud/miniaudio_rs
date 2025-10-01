@@ -1,4 +1,7 @@
-﻿use crate::miniaudio_rs::*;
+﻿use crate::miniaudio_rs::{
+    ma_context, ma_context_get_devices, ma_context_init, ma_context_uninit, ma_device_info,
+    ma_result_MA_SUCCESS, ma_uint32,
+};
 use std::ffi::CStr;
 use std::os::raw::c_char;
 use std::ptr;

@@ -1,7 +1,14 @@
-﻿use crate::miniaudio_rs::*;
+﻿use crate::miniaudio_rs::{
+    ma_backend, ma_backend_ma_backend_wasapi, ma_device, ma_device_config_init, ma_device_init_ex,
+    ma_device_start, ma_device_stop, ma_device_type_ma_device_type_loopback, ma_device_uninit,
+    ma_encoder, ma_encoder_config_init, ma_encoder_init_file, ma_encoder_uninit,
+    ma_encoder_write_pcm_frames, ma_encoding_format_ma_encoding_format_wav,
+    ma_format_ma_format_f32, ma_result, ma_result_MA_SUCCESS, ma_uint64,
+};
 use std::ffi::CString;
 use std::os::raw::c_void;
 use std::ptr;
+
 const MA_SUCCESS: ma_result = ma_result_MA_SUCCESS as ma_result;
 
 unsafe extern "C" fn capture_callback(

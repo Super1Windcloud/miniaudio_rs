@@ -1,6 +1,6 @@
 [package]
 name = "miniaudio_rs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 authors = ["superwindcloud <<1178933440@qq.com>>"]
 homepage = "https://github.com/super1windcloud/miniaudio_rs"
